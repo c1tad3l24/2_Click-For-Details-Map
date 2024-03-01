@@ -54,11 +54,11 @@ width:50%;
     map.on('load', () => {
    
         //line below console logs out the layers in your current map
-        //console.log(map.getStyle().layers)
+        console.log(map.getStyle().layers)
 
         // When a click event occurs on a feature in the places layer, open a popup at the
         // location of the feature, with description HTML from its properties.
-        map.on('click', 'prison_population', (e) => {
+        map.on('click', 'prison-boundaries-centroids-cz0j6t', (e) => {
             // Copy coordinates array.
             const coordinates = e.features[0].geometry.coordinates.slice();
             const name = e.features[0].properties.NAME;
